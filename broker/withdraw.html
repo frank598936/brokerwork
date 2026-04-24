@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+</head>
+<body>
+  <header class="header">
+      <div class="container">
+        <div class="logo">
+          <p>Smart Investments</p>
+        </div>
+
+        <nav class="nav">
+          <ul>
+            <li><a href="home.html">Dashborad</a></li>
+            <li><a href="deposit.html">Deposit</a></li>
+            <li><a href="withdraw.html">Withdraw</a></li>
+            <li><a href="profile.html">Profile Setting</a></li>
+          </ul>
+        </nav>
+
+        <div class="navbtn">
+          <a class="btn get-stared" href="index.html">Logout</a>
+        </div>
+
+        <div class="menu">
+          <label for="menubtn"><i class="fa-solid fa-align-justify"></i></label>
+          <input type="checkbox" id="menubtn">
+          <ul>
+            <li><a href="home.html">Dashborad</a></li>
+            <li><a href="deposit.html">Deposit</a></li>
+            <li><a href="withdraw.html">Withdraw</a></li>
+            <li><a href="profile.html">Profile Setting</a></li>
+            <li><a href="index.html">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="withdraw">
+      <div class="dashborad">
+        <h2>Withdraw Money</h2>
+      </div>
+
+    <div class="container">
+      <div class="historybtn">
+        <a href="#" class="btn">Withdraw History</a>
+      </div>
+      <div class="withdrawmethod">
+        <div class="btcwithdraw">
+          <img src="asset/crypto8.jpg" alt="Bitcoin">
+          <div class="butt"><p><b>BITCOIN</b></p></div>
+          <div class="butt">
+            <p>Limit : 100 - 100,000,000 USD</p>
+          </div>
+          <div class="butt">
+            <a href="#" class="btn">Withdraw Now</a>
+          </div>
+        </div>
+
+        <div class="bankwithdraw">
+          <form action="#" class="form">
+            <p><b>WITHDRAW VIA BANK TRANSFER</b></p>
+            <label for="bankname">Bank Name</label>
+            <input type="text" name="bankname" id="bankname" required><br>
+            <label for="acctname">Acctount Name</label>
+            <input type="text" name="acctname" id="acctname" required><br>
+            <label for="acctnumber">Acctount Number</label>
+            <input type="text" name="acctnumber" id="acctnumber" required><br>
+            <label for="swiftcode">Iban/Swift</label>
+            <input type="text" name="swiftcode" id="swiftcode" required><br>
+            <label for="amount">Amount</label>
+            <input type="text" name="amount" id="amount" required>
+            <button>Submit</button>
+          </form>
+
+
+        </div>
+      </div>
+    </div>
+    </section>
+    
+    <footer class="footers">
+        <div class="container">
+            <div>
+                <h2>SMART INVESTMENT</h2>
+            </div>
+            <p>@ 2026 <strong>Smart Investments.</strong> All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

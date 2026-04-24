@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <p>Smart Investments</p>
+        </div>
+
+        <nav class="nav">
+          <ul>
+            <li><a href="home.html">Dashborad</a></li>
+            <li><a href="deposit.html">Deposit</a></li>
+            <li><a href="withdraw.html">Withdraw</a></li>
+            <li><a href="profile.html">Profile Setting</a></li>
+          </ul>
+        </nav>
+
+        <div class="navbtn">
+          <a class="btn get-stared" href="index.html">Logout</a>
+        </div>
+
+        <div class="menu">
+          <label for="menubtn"><i class="fa-solid fa-align-justify"></i></label>
+          <input type="checkbox" id="menubtn">
+          <ul>
+            <li><a href="home.html">Dashborad</a></li>
+            <li><a href="deposit.html">Deposit</a></li>
+            <li><a href="withdraw.html">Withdraw</a></li>
+            <li><a href="profile.html">Profile Setting</a></li>
+            <li><a href="index.html">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="profile">
+      <div class="dashborad">
+        <h2>Profile Setting</h2>
+      </div>
+      <div class="container">
+        <form action="#" class="form">
+          <label for="firstname">First Name</label>
+          <input type="text" name="firstname" id="firstname" required /><br />
+          <label for="lastname">Last Name</label>
+          <input type="text" name="lastname" id="lastname" required /><br />
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" required /><br />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required /><br />
+          <label for="mobile">Mobile</label>
+          <input type="text" name="mobile" id="mobile" required />
+          <button>Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footers">
+        <div class="container">
+            <div>
+                <h2>SMART INVESTMENT</h2>
+            </div>
+            <p>@ 2026 <strong>Smart Investments.</strong> All rights reserved.</p>
+        </div>
+    </footer>
+  </body>
+</html>

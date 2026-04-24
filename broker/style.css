@@ -1,0 +1,719 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  padding-inline: 30px;
+  padding-block: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(107, 142, 146);
+}
+
+.btn {
+  border: black solid 1px;
+  border-radius: 7px;
+  padding-inline: 20px;
+  padding-block: 5px;
+  font-size: 15px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.form {
+  display: grid;
+  font-size: 12px;
+}
+
+form input {
+  padding: 5px;
+  border-radius: 7px;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+.dashborad{
+  background-image: url(asset/crypto2.jpg);
+  background-position: center;
+  padding-inline: 30px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.dashborad h2{
+  font-size: 40px;
+}
+
+.historybtn{
+  text-align: end;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.historybtn .btn{
+  background-color: greenyellow;
+  border: none;
+  padding-inline: 40px;
+}
+
+/* Index */
+/* Header */
+.header .container {
+  background-color: rgb(241, 235, 227);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .secon {
+  background-color: rgb(211, 208, 204);
+}
+
+.header .container .logo {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.header .nav ul {
+  display: none;
+}
+
+.header .container .navbtn {
+  display: none;
+}
+
+.header .navbtn .get-stared {
+  background-color: black;
+  color: white;
+}
+
+.header .menu ul{
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  line-height: 40px;
+    background-color: rgb(241, 235, 227);
+  width: 50%;
+  padding: 8px 30px;
+  border-radius: 5px;
+  display: none;
+}
+
+.header .menu a{
+  color: black;
+  font-weight: 400;
+}
+
+.header .menu input{
+  display: none;
+}
+
+[id^=menubtn]:checked + ul{
+  display: block;
+}
+
+.header .menu ul li a:hover{
+  color: rgb(182, 113, 113);
+  padding-inline: 5px;
+}
+
+
+
+/* Hero Section */
+.hero .container {
+  background-image: url(asset/horepic.png);
+  background-position: center;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.hero .container .p {
+  background-color: rgb(182, 173, 173);
+  width: 180px;
+  font-size: 12px;
+  padding-block: 5px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero .container h1 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.hero .container .p-p {
+  margin-bottom: 30px;
+}
+
+.hero .container .start {
+  background-color: black;
+  color: azure;
+}
+
+/* Features */
+.features .container .feat {
+  text-align: center;
+  display: grid;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.features .container img{
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.features .container .feature {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.features .feature .serv {
+  border: rgb(172, 166, 166) solid 1px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.features .serv h3 {
+  margin-bottom: 5px;
+}
+
+/* Services */
+.services .container {
+  background-color: rgb(233, 229, 225);
+  margin-bottom: 25px;
+}
+.services .container .service {
+  display: grid;
+  gap: 10px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.services fieldset {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.services fieldset p i {
+  padding-right: 20px;
+  color: rgb(76, 238, 76);
+}
+
+.services fieldset .btn {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.services fieldset legend {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 5px 15px;
+  font-size: 12px;
+  border-radius: 15px;
+}
+
+/* About */
+.about .container {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.about .container h2 {
+  font-size: 30px;
+}
+
+.about ul li {
+  list-style: disc;
+  margin-bottom: 10px;
+}
+
+.about .container .btn {
+  background-color: black;
+  color: white;
+  width: 200px;
+  text-align: center;
+}
+
+.about .container .trust {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about .trust .result {
+  padding: 20px;
+  text-align: center;
+}
+
+.about .result p b {
+  font-size: 20px;
+}
+
+/* Testimonials */
+.testimonials .container .test {
+  justify-self: center;
+  margin-bottom: 30px;
+}
+
+.testimonials .container .testimonial {
+  border: rgb(172, 166, 166) solid 1px;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.testimonials .testimonial h3 {
+  font-size: 14px;
+}
+
+/*index Footer */
+.footer .container {
+  background-color: rgb(211, 208, 204);
+}
+
+.footer .container .contect {
+  padding-top: 30px;
+}
+
+.footer .contect .foot {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Main Footers */
+.footers .container{
+  background-image: url(asset/crypto2.jpg);
+  background-position: center;
+  color: white;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login */
+.loginmain form {
+  padding: 30px;
+}
+
+.loginmain .content {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.loginmain .form .p-word {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.loginmain .p-word .c-box {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.loginmain .p-word a {
+  font-weight: 900;
+  color: rgb(236, 57, 57);
+}
+
+.loginmain .form button {
+  margin-bottom: 10px;
+  background-color: black;
+  color: white;
+  padding-block: 3px;
+  border-radius: 5px;
+}
+
+.loginmain .form .signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.loginmain .signup a {
+  font-weight: 900;
+}
+
+/* Signup */
+.signupmain form {
+  padding: 30px;
+}
+
+.signupmain .content {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.signupmain form .c-box {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 5px;
+}
+
+.signupmain .p-word a {
+  font-weight: 900;
+  color: rgb(236, 57, 57);
+}
+
+.signupmain .form button {
+  margin-bottom: 10px;
+  background-color: rgb(106, 106, 230);
+  padding-block: 3px;
+  border-radius: 5px;
+}
+
+.signupmain .form .login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.signupmain .login a {
+  font-weight: 900;
+}
+
+/* Home */
+/* Viewborad */
+.viewborad .borad{
+  color: white;
+}
+
+.viewborad .borad .username{
+  background-color: rgb(44, 28, 90);
+  padding-inline: 30px;
+  padding-block: 5px;
+  height: 80px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.viewborad .borad .investment{
+  background-color: black;
+  height: 40px;
+  padding-inline: 30px;
+  padding-block: 9px;
+}
+
+.viewborad .borad .amount{
+  display: flex;
+  align-items: center;
+}
+
+.viewborad .amount .balance{
+  background-color: rgb(19, 25, 105);
+  width: 50%;
+  height: 60px;
+  padding-inline: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.viewborad .borad .profit{
+  background-color: rgba(114, 102, 36, 0.959);
+  width: 50%;
+  height: 60px;
+  padding-inline: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.viewborad .borad .total{
+  background-color: rgba(165, 42, 42, 0.952);
+  height: 60px;
+  padding-inline: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.viewborad .borad .bonus{
+  background-color: rgb(57, 29, 83);
+  width: 50%;
+  height: 60px;
+  padding-inline: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.viewborad .borad .with{
+  background-color: rgb(78, 14, 14);
+  width: 50%;
+  height: 60px;
+  padding-inline: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.viewborad .borad .acct{
+  background-color: black;
+  padding-inline: 30px;
+  padding-block: 9px;
+}
+
+.viewborad .borad img{
+  width: 100%;
+  height: 400px;
+}
+
+
+/* Deposit */
+.deposit .container{
+  background-color: rgb(32, 107, 82);
+}
+
+.deposit .container a{
+  color: black;
+}
+
+.deposit .container .methods{
+  display: grid;
+  gap: 50px;
+}
+
+.deposit .methods .deposit-method{
+  background-color: rgb(255, 255, 255);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+
+}
+
+.deposit .deposit-method .d-address{
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: black dashed 1px;
+}
+
+.deposit .d-address p{
+  background-color: rgb(223, 223, 114);
+  border: black solid 1px ;
+  line-height: 25px;
+  padding-inline: 10px;
+  width: 250px;
+}
+
+.deposit .deposit-method .butt{
+  border: black dashed 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px 10px;
+  height: 60px;
+  width: 100%;
+}
+
+.deposit .deposit-method .btn{
+  background-color: greenyellow;
+  display: block;
+  border: none;
+}
+
+/* Withdraw */
+.withdraw .container{
+  background-color: rgb(32, 107, 82);
+}
+.withdraw .container .withdrawmethod{
+  display: grid;
+  gap: 70px;
+}
+
+.withdraw .withdrawmethod .btcwithdraw{
+  background-color: white;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.withdraw .btcwithdraw .butt{
+  border: black dashed 1px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.withdraw .butt .btn{
+  background-color: greenyellow;
+  display: block;
+  width: 450px;
+  border: none;
+}
+
+.withdraw a{
+  color: black;
+}
+
+.withdraw .withdrawmethod .form{
+  background-color: white;
+  border: black solid 1px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+
+.withdraw .withdrawmethod .form p{
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.withdraw .withdrawmethod .form button{
+  background-color: greenyellow;
+  margin-block: 30px;
+  width: 450px;
+  line-height: 30px;
+  justify-self: center;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Profile Setting */
+.profile .container{
+  background-color: rgb(32, 107, 82);
+}
+.profile .container .form{
+  background-color: white;
+  border: black solid 1px;
+  padding: 30px 20px;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.profile .container .form button{
+  background-color: greenyellow;
+  margin-block: 30px;
+  width: 450px;
+  line-height: 30px;
+  justify-self: center;
+  border-radius: 10px;
+  border: none;
+}
+
+
+@media (min-width: 1024px) {
+  /* Index */
+  .header .nav ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .header .container .navbtn {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .header .container .menu {
+    display: none;
+  }
+
+  .features .container .feature {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services .container .options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .services fieldset .btn {
+    width: 200px;
+    align-self: center;
+  }
+
+  .about .container .trust {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .testimonials .container .contect {
+    display: flex;
+    gap: 50px;
+  }
+
+  .footer .container .contect {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  /* Login */
+  .loginmain form {
+    justify-self: center;
+    width: 800px;
+  }
+
+  /* Signup */
+  .signupmain form {
+    justify-self: center;
+    width: 800px;
+  }
+
+  .signupmain .bel{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .signupmain .bel input{
+    width: 350px;
+  }
+}
